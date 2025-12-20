@@ -5,9 +5,6 @@ on:
 
 jobs:
   build-and-push:
-
-jobs:
-  build-and-push:
     runs-on: ubuntu-latest
 
     permissions:
