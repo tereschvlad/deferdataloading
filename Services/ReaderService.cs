@@ -50,7 +50,7 @@ internal class ReaderService : IReaderService
 
                     var requestData = JsonSerializer.Deserialize<RequestDataModel>(msg);
 
-                    _logger.LogInformation("Doing request {RequestName} application {Application}", requestData.RequestName, requestData.Application);
+                    _logger.LogInformation("To do request {RequestName} application {Application}", requestData.RequestName, requestData.Application);
 
                     var rows = await _dbReaderService.ReadDataAsync(requestData.Request, requestData.Parameters);
                     
